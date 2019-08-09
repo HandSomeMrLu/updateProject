@@ -309,7 +309,7 @@ body
     font-weight: bold;
     font-family:新宋体;
 }
-.content_right p{
+.content_rightP{
     height: 40px;
     font-size: 14px;
     color: grey;
@@ -379,10 +379,45 @@ body
     height: 40px;
     position: relative;
 }
+.update_person_inf
+{
+    height: 40px;
+    position: relative;
+}
+.update_msg_inf
+{
+
+    height: 40px;
+    position: relative;
+}
+.front_update_inf
+{
+    height: 40px;
+    position: relative;
+}
+.end_update_inf
+{
+    height: 40px;
+    position: relative;
+}
 .function_icon_add
 {
     width: 100%;
-    margin-bottom: 0px;
-    text-align: center;
 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.delete_inf
+{
+   width: 20px;
+    margin-left: 60%;
+}
+.project_version_infP {
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
+    color: grey;
+    font-family: 华文宋体;
+   padding-left: 30px;
 }

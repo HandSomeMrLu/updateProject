@@ -423,3 +423,30 @@ project_msg_endTime
 {
     color: orangered;
 }
+.pageFunction
+{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.nextPage
+{
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #0099FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.prePage
+{
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: #0099FF;
+    border: none;
+    color: white;
+    margin-right: 20px;
+    border-radius: 5px;
+}

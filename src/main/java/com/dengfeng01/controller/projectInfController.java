@@ -8,10 +8,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.List;
-import java.util.Map;
+
 
 @Controller
 public class projectInfController {
@@ -31,7 +31,22 @@ public class projectInfController {
     @RequestMapping("/queryProjectInf")
     public Page<ProjectInf> queryProjectInf(@RequestBody MyPage page)
     {
-        System.out.println("进入");
+
         return projectInfService.queryProjectInf(page.getCurrentPage(),page.getPageSize());
+    }
+    @ResponseBody
+    @RequestMapping("/getCount")
+    public long getCount()
+    {
+
+        return  projectInfService.getCount();
+    }
+    @ResponseBody
+    @RequestMapping("/getProjectInfByName")
+    public ProjectInf getProjectInfByName(@RequestParam(name = "projectName")  String projectName)
+    {
+        System.out.println("sss");
+        System.out.println(projectName);
+        return projectInfService.getProjectInf(projectName);
     }
 }

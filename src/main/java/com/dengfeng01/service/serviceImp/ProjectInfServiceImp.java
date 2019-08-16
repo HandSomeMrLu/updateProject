@@ -25,4 +25,14 @@ public class ProjectInfServiceImp implements ProjectInfService {
     public Page<ProjectInf> queryProjectInf(int currentPage, int pageSize) {
         return projectInfRp.findAll(PageRequest.of(currentPage,pageSize));
     }
+
+    @Override
+    public long getCount() {
+        return projectInfRp.count();
+    }
+
+    @Override
+    public ProjectInf getProjectInf(String name) {
+        return projectInfRp.findProjectInfByName(name);
+    }
 }

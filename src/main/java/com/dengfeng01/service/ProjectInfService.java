@@ -7,5 +7,7 @@ public interface ProjectInfService {
 
     void saveProjectInf(ProjectInf projectInf);
     Page<ProjectInf> queryProjectInf(int currentPage,int pageSize);
+    long getCount();
+    ProjectInf getProjectInf(String name);
 
 }

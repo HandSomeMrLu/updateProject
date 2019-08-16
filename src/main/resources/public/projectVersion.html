@@ -48,41 +48,46 @@
              </tr>
              <tr>
                  <td class="update_person_inf" valign="top">
-                 <p class="project_version_infP">张三<span class="delete_inf"><i class="iconfont icon-jianhao"></i></span></p>
-
                   <div class="function_icon_add">
-                      <i class="iconfont icon-jiahao"></i>
+                      <i class="iconfont icon-jiahao" id="addUpdatePerson"></i>
                   </div>
                  </td>
                  <td class="confirm_person_inf" valign="top">
                      <div class="function_icon_add">
-                         <i class="iconfont icon-jiahao"></i>
+                         <i class="iconfont icon-jiahao" id="addConfirmPerson"></i>
                      </div>
                  </td>
                  <td class="update_msg_inf" valign="top">
                      <div class="function_icon_add">
-                         <i class="iconfont icon-jiahao"></i>
+                         <i class="iconfont icon-jiahao" id="addUpdateMsg"></i>
                      </div>
                  </td>
                  <td class="front_update_inf" valign="top">
                      <div class="function_icon_add">
-                         <i class="iconfont icon-jiahao"></i>
+                         <i class="iconfont icon-jiahao" id="addFrontUpdate"></i>
                      </div>
                  </td>
                  <td class="end_update_inf" valign="top">
                      <div class="function_icon_add">
-                         <i class="iconfont icon-jiahao"></i>
+                         <i class="iconfont icon-jiahao" id="addEndUpdate"></i>
                      </div>
                  </td>
-
              </tr>
-
-
-
          </table>
-
+        <div class="front_inf_add">
+          <p class="front_inf_add_title">前端环境包</p>
+          <p class="front_name"><span>包&nbsp&nbsp名:</span><input></p>
+          <p class="front_address"><span>地&nbsp&nbsp址:</span><input></p>
+          <p class="front_version"><span>版本号:</span><input></p>
+          <p class="front_status"><span>状&nbsp&nbsp态:</span><input placeholder="请输入0,1,2代表稳定程度"></p>
+           <div class="front_inf_function">
+          <button class="front_inf_submit">提交</button>
+          <button class="front_inf_cancel">取消</button>
+           </div>
+        </div>
     </div>
 </div>
 </body>
-
+<script type="text/javascript" src="js/jQuery3.4.1.js"></script>
+<script type="text/javascript" src="js/projectVersion.js"></script>
 </html>

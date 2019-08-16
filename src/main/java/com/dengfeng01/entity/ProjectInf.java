@@ -7,15 +7,15 @@ import java.sql.Date;
 @Entity
 public class ProjectInf {
 
-   @Id
-   private String name;
-   private String type;
-   private String introduce;
-    private Date beginTime;
-    private Date endTime;
-    private String createPerson;
-    private String status;
-    public String getIntroduce() {
+     @Id
+     private String name;
+     private String type;
+     private String introduce;
+     private Date beginTime;
+     private Date endTime;
+     private String createPerson;
+     private String status;
+     public String getIntroduce() {
         return introduce;
     }
 
